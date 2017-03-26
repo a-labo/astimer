@@ -24,7 +24,7 @@ describe('astimer', function () {
     timer.tick()
     yield timer.sleep(10)
     ok(timer.tick() >= 10)
-
+    ok(timer.startAt)
   }))
 })
 
