@@ -1,6 +1,6 @@
 {
   "name": "astimer",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Async timer",
   "main": "lib",
   "scripts": {
