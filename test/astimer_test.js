@@ -6,26 +6,25 @@
 
 const AsTimer = require('../lib/astimer.js')
 const { ok } = require('assert')
-const co = require('co')
 
 describe('astimer', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('AsTimer', () => co(function * () {
+  it('AsTimer', async () => {
     let timer = new AsTimer()
     timer.tick()
-    yield timer.sleep(10)
+    await timer.sleep(10)
     ok(timer.tick() >= 10)
     ok(timer.startAt)
-  }))
+  })
 })
 
 /* global describe, before, after, it */
